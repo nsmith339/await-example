@@ -12,3 +12,6 @@ the list from requestList is: [ 'a', 'b', 'c' ]
 the list from getList is: [ 'a', 'b', 'c' ]
 the list from getListUsingAwait is: [ 'a', 'b', 'c' ]
 ```
+
+You should notice something odd about the result from `getListUsingAwait`. It is a **Promise of a Promise**.
+Realistically, this wouldn't be an issue, but this would take up more memory if done on a larger scale.
